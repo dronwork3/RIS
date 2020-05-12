@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container4">
+    <table border="1">
+        <tr>
+            <td>ID</td>
+            <td>Фамилия</td>
+            <td>Имя</td>
+            <td>Адрес</td>
+            <td>Телефон</td>
+            <td>Email</td>
+            <td>Действие</td>
+        </tr>
+        <tr th:each="user:${users}">
+            <td th:text="${user.id}">ID</td>
+            <td th:text="${user.surname}">Фамилия</td>
+            <td th:text="${user.name}">Имя</td>
+            <td th:text="${user.address}">Адрес</td>
+            <td th:text="${user.phone}">Телефон</td>
+            <td th:text="${user.email}">Email</td>
+            <td>
+                <a th:href="@{user-update/{id}(id=${user.id})}" class="btn btn-warning">Edit</a>
+                <a th:href="@{user-delete/{id}(id=${user.id})}" class="btn btn-danger" id="deleteButton">Remove</a>
+            </td>
+        </tr>
+    </table>
+
+    <a href="/user-create" class=" btn btn-success">Add</a>
+
+
+
+
+</div>
+
+
+</body>
+
+
+
+</html>

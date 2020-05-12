@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Fibbonachi</title>
+    <style>
+        textarea{
+            margin: 0;
+            position: absolute;
+            top: 130%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            width:400px;
+            height: 100px;
+        }
+        .container4 {
+            height: 10em;
+            position: relative }
+        .container4 form {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%) }
+        .green {
+            background-color: rgb( 43, 153, 91 );
+            border: 1px solid rgb( 33, 126, 74 );
+        }
+
+        .green:hover {
+            background-color: rgb( 75, 183, 141 );
+        }
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container4">
+        <form action="" method="post">
+            <input type="number" name="startDigit" placeholder="Введите число">
+            <input class="green" name="sendInput" type="submit">
+        </form>
+        <textarea name="fibbonachiArea" th:text="${fibbonachiArea}">>
+
+        </textarea>
+
+    </div>
+
+</body>
+</html>

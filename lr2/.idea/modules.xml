@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/lr2.iml" filepath="$PROJECT_DIR$/.idea/lr2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lr2-ejb/lr2-ejb.iml" filepath="$PROJECT_DIR$/lr2-ejb/lr2-ejb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lr2-war/lr2-war.iml" filepath="$PROJECT_DIR$/lr2-war/lr2-war.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,73 @@
+/* 
+    Document   : style
+    Created on : Feb 12, 2020, 11:13:59 PM
+    Author     : Виктор
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+legend{
+    font-weight: bold;
+}
+
+form{
+    border: 1px solid black;
+    border-radius: 2em;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+form, table, h1{
+    background-color: white;
+}
+
+input[type="submit"] {
+    position: relative;
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    background-color: green; /*for compatibility with older browsers*/
+    background-image: linear-gradient(grey,lightgrey);
+    border-radius: 1em;
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.15em;
+    font-family: consolas;
+    font-weight: 100;
+}
+
+legend{
+    margin-bottom: 0.40em;
+}
+
+em{
+    font-size: 2em;
+    font-family: Impact;
+    color: red;
+    font-style: normal;
+}
+
+h1{
+    padding: 1em;
+}
+
+table{
+    border: 1px solid black;
+    width: 100%;
+    padding: 1px;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+td:first-of-type{
+    width:1%;
+    white-space:nowrap;
+}

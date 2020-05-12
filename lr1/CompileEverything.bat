@@ -1,0 +1,1 @@
+javac src/RMIInterface/RMIInterface.java src/RMIServer/Server.java src/RMIClient/Client.java
