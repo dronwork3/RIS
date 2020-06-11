@@ -1,0 +1,21 @@
+{
+  "Company" : "LeverX",
+  "Town" : "Minsk"
+  "members" : [
+    {
+      "name" : "Сонька",
+      "surname" : "Новикова",
+      "age" : 23,
+    },
+     {
+      "name" : "Сонька",
+      "surname" : "Новикова",
+      "age" : 23,
+    },
+     {
+      "name" : "Сонька",
+      "surname" : "Новикова",
+      "age" : 23,
+    },
+  ]
+}
